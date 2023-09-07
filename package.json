@@ -1,0 +1,24 @@
+{
+  "name": "activebox_landing_yulia",
+  "version": "1.0.0",
+  "description": "text",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UliaKryshtapovich/ActiveBox_Landing_Yulia.git"
+  },
+  "author": "yulia",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  },
+  "bugs": {
+    "url": "https://github.com/UliaKryshtapovich/ActiveBox_Landing_Yulia/issues"
+  },
+  "homepage": "https://github.com/UliaKryshtapovich/ActiveBox_Landing_Yulia#readme"
+}

@@ -1,0 +1,28 @@
+@import '../scss/variables';
+@import '../scss/_mixins';
+@import '../scss/cdn';
+@import '../scss/rezet';
+@import '../scss/header.scss';
+@import '../scss/feature.scss';
+@import '../scss/work.scss';
+@import '../scss/team.scss';
+@import '../scss/media.scss';
+
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+ }
+.button {
+    @include button;
+}
+.button:hover {
+    background-color:$red_nav-active_button-hover;
+}
+.button:active {
+    @include button;
+    box-shadow: 0px 0px 10px $red_btn-normal; 
+}
+
+
