@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./scss/index.scss">
-    <title>Document</title>
+    <link type="image/x-icon" href="../src/img/favicon.png" rel="icon">
+    <title>ACTIVEBOX</title>
 </head>
 <body>
     <header class="header"> 
         <div class="container">
             <div class="header_wrapper-nav"> 
                 <div class="header_logo"> 
-                <img src="../src/img/ACTIVEBOX (2).svg"> 
-                <img class="header_img" src="../src/img/ACTIVEBOX.svg"> 
+                <img class="header_logo-img" src="../src/img/ACTIVEBOX (2).svg" alt="logo"> 
+                <img class="header_img" src="../src/img/ACTIVEBOX.svg" alt="logo"> 
             </div>
-            <div class="header_burger">
+            <div class="header__burger">
                 <span></span>
             </div>
             <nav class="header_nav">
@@ -27,8 +30,7 @@
                 </ul>
             </nav>
          </div>
-         <div class="header_gray-block"></div>
-         <h1>Your Favorite One Page
+         <h1 class="header_title">Your Favorite One Page
             Multi Purpose Template </h1>
             <div class="header_subtitle">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
@@ -107,16 +109,78 @@
     </section>
 
     <section class="work"> 
-        <div class="work_wrapper">
-            <div class="work_img"> <img src="../src/img/work_1.png" alt="work"> </div>
-            <div class="work_img"> <img src="../src/img/work_2.png" alt="work"> </div>
-            <div class="work_img"> <img src="../src/img/Rectangle 17.png" alt="work"> </div>
-            <div class="work_img"> <img src="../src/img/work_4.png" alt="work"> </div>
-            <div class="work_img"> <img src="../src/img/work_5.png" alt="work"> </div>
-            <div class="work_img"> <img src="../src/img/work_6.png" alt="work"> </div>
-            <div class="work_img"> <img src="../src/img/work_7.png" alt="work"> </div>
-            <div class="work_img"> <img src="../src/img/work_8.png" alt="work"> </div>
-        </div>
+        <a href="#" class="work_item"> 
+            <div class="work_img"> 
+                <img src="../src/img/img-work/front-view-workplace-chair-and-table.jpg" alt="work">
+            </div>
+            <div class="work_img-hover"> 
+                <h3> Project Name </h3>
+                <span> User Interface Design </span>
+            </div>
+        </a>
+        <a href="#" class="work_item"> 
+            <div class="work_img"> 
+                <img src="../src/img/img-work/gallery-wall-mockup-psd-hanging-in-retro-room-home-decor-interio.jpg" alt="work">
+            </div>
+            <div class="work_img-hover"> 
+                <h3> Project Name </h3>
+                <span> User Interface Design </span>
+            </div>
+        </a>
+        <a href="#" class="work_item"> 
+            <div class="work_img"> 
+                <img src="../src/img/img-work/relaxing-armchair-in-front-of-the-window-with-a-small-table-interior-of-a-cozy-house-ai-generateive-generative-ai.jpg" alt="work">
+            </div>
+            <div class="work_img-hover"> 
+                <h3> Project Name </h3>
+                <span> User Interface Design </span>
+            </div>
+        </a>
+        <a href="#" class="work_item"> 
+            <div class="work_img"> 
+                <img src="../src/img/img-work/minimal-amazing-interior-design.jpg" alt="work">
+            </div>
+            <div class="work_img-hover"> 
+                <h3> Project Name </h3>
+                <span> User Interface Design </span>
+            </div>
+        </a>
+        <a href="#" class="work_item"> 
+            <div class="work_img"> 
+                <img src="../src/img/img-work/relaxing-armchair-in-front-of-the-window-with-a-small-table-interior-of-a-cozy-house-ai-generateive-generative-ai.jpg" alt="work"> 
+            </div>
+            <div class="work_img-hover"> 
+                <h3> Project Name </h3>
+                <span> User Interface Design </span>
+            </div>
+        </a>
+        <a href="#" class="work_item"> 
+            <div class="work_img"> 
+                <img src="../src/img/img-work/gray-sofa-in-white-living-room-interior-with-copy-space-3d-rendering.jpg" alt="work"> 
+            </div>
+            <div class="work_img-hover"> 
+                <h3> Project Name </h3>
+                <span> User Interface Design </span>
+            </div>
+        </a>
+        <a href="#" class="work_item"> 
+            <div class="work_img"> 
+                <img src="../src/img/img-work/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg" alt="work">
+            </div>
+            <div class="work_img-hover"> 
+                <h3> Project Name </h3>
+                <span> User Interface Design </span>
+            </div>
+        </a>
+        <a href="#" class="work_item"> 
+            <div class="work_img"> 
+                <img src="../src/img/img-work/view-of-photo-frames-in-home-with-interior-design.jpg" alt="work">
+            </div>
+            <div class="work_img-hover"> 
+                <h3> Project Name </h3>
+                <span> User Interface Design </span>
+            </div>
+        </a>
     </section>
 
     <section class="team"> 
@@ -125,72 +189,74 @@
 
                 <div class="team_item">
                     <div class="team_item-img">
-                        <img src="../src/img/team-img/1.png" alt="photography">
+                        <img src="../src/img/teamm-img/cheerful-young-pretty-bearded-fair-haired-male-in-glasses-keeping-folded-hands-on-table-while-looking-happily-at-camera-with-charming-smile-isolated-over-white-background.jpg" alt="photography">
                     </div>
-                    <h4>Ruth woods </h4>
-                    <h5> founder, ceo</h5>
-                    <div class="team_item-text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                    <h4>david woods </h4>
+                    <span> founder, ceo</span>
+                    <div class="team_item-text">  <p> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
                         ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
-                         Nullam quis risus eget urna mollis ornare vel eu leo. </div>
-                         <nav class="team_socials"> 
-                            <ul class="team_socials-list"> 
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a> </li>
+                         Nullam quis risus eget urna mollis ornare vel eu leo.</p> </div>
+                         <nav class="socials"> 
+                            <ul class="socials-list"> 
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a> </li>
                         </ul>
                          </nav>
                 </div>
 
+                 <div class="team_item">
+                            <div class="team_item-img">
+                                <img src="../src/img/teamm-img/stylish-confident-businesswoman-smiling.jpg" alt="photography">
+                            </div>
+                            <h4> Victoria Vladez</h4>
+                            <span>ui designer </span>
+                            <div class="team_item-text"> <p> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                                ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                                Nullam quis risus eget urna mollis ornare vel eu leo.</p> </div>
+                                <nav class="socials"> 
+                                    <ul class="socials-list"> 
+                                    <li class="socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
+                                    <li class="socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
+                                    <li class="socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a> </li>
+                                </ul>
+                                </nav>
+                        </div>
+
                 <div class="team_item">
                     <div class="team_item-img">
-                        <img src="../src/img/team-img/2.png" alt="photography">
+                        <img src="../src/img/teamm-img/busy-male-enterpreneur-work-with-papers-or-documents-in-office-holds-pen.jpg" alt="photography">
                     </div>
                     <h4> Timothy Reed</h4>
-                    <h5> co-founder, developer</h5>
-                    <div class="team_item-text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                    <span> co-founder, developer</span>
+                    <div class="team_item-text">  <p> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
                         ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
-                         Nullam quis risus eget urna mollis ornare vel eu leo. </div>
-                         <nav class="team_socials"> 
-                            <ul class="team_socials-list"> 
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a> </li>
+                         Nullam quis risus eget urna mollis ornare vel eu leo.</p> </div>
+                         <nav class="socials"> 
+                            <ul class="socials-list"> 
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a> </li>
                         </ul>
                          </nav>
                 </div>
 
-                <div class="team_item">
-                    <div class="team_item-img">
-                        <img src="../src/img/team-img/3.png" alt="photography">
-                    </div>
-                    <h4> Victoria Vladez</h4>
-                    <h5>ui designer </h5>
-                    <div class="team_item-text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
-                        ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
-                         Nullam quis risus eget urna mollis ornare vel eu leo. </div>
-                         <nav class="team_socials"> 
-                            <ul class="team_socials-list"> 
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a> </li>
-                        </ul>
-                         </nav>
-                </div>
+               
 
                 <div class="team_item">
                     <div class="team_item-img">
-                        <img src="../src/img/team-img/4.png" alt="photography">
+                        <img src="../src/img/teamm-img/portrait-of-corporate-woman-holding-clipboard-at-work-standing-in-formal-outfit-over-white-background.jpg" alt="photography">
                     </div>
                     <h4>Beverly Little </h4>
-                    <h5> data scientist </h5>
-                    <div class="team_item-text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                    <span> data scientist </span>
+                    <div class="team_item-text">  <p> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
                         ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
-                         Nullam quis risus eget urna mollis ornare vel eu leo. </div>
-                         <nav class="team_socials"> 
-                            <ul class="team_socials-list"> 
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
-                            <li class="team_socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a> </li>
+                         Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
+                         <nav class="socials"> 
+                            <ul class="socials-list"> 
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
+                            <li class="socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a> </li>
                         </ul>
                          </nav>
                 </div>
@@ -199,18 +265,116 @@
         </div>
     </section>
 
-    <section class="testimonials">
+    <section class="swiper">
+    <!--/* контейнер */-->
+        <div class=" swiper-container image-slider">
+             <!--/* оболочка-врапер */-->
+            <div class="swiper-wrapper">
+                 <!--/* слайд */-->
+                <div class="swiper-slide slide-first">
+                    <div class="swiper_warapper-img">
+                        <img src="../src/img/swiper-1.jpg" alt="#">
+                        <div class="swiper_wraper-text">
+                            <div class="swiper_title">
+                        <h4>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h4>
+                        <span>Susan Sims, Interaction Designer at XYZ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <!--/* слайд */-->
+                  <div class="swiper-slide" id="slide-second">
+                    <div class="swiper_warapper-img">
+                        <img src="../src/img/img-work/comfortable-couch-in-a-modern-house-with-a-lamp-on-a-little-white-shelf-and-a-book-with-a-waterfall.jpg" alt="#">
+                        <div class="swiper_wraper-text">
+                            <div class="swiper_title">
+                        <h4>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h4>
+                        <span>Susan Sims, Interaction Designer at XYZ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/* слайд */-->
+                <div class="swiper-slide" id="slide-thrid">
+                    <div class="swiper_warapper-img">
+                        <img src="../src/img/img-work/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg" alt="#">
+                        <div class="swiper_wraper-text">
+                            <div class="swiper_title">
+                        <h4>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h4>
+                        <span>Susan Sims, Interaction Designer at XYZ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/* слайд */-->
+                <div class="swiper-slide" id="slide-fourth">
+                    <div class="swiper_warapper-img">
+                        <img src="../src/img/img-work/gallery-wall-mockup-psd-hanging-in-retro-room-home-decor-interio.jpg" alt="#">
+                        <div class="swiper_wraper-text">
+                            <div class="swiper_title">
+                        <h4>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h4>
+                        <span>Susan Sims, Interaction Designer at XYZ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--/* оболочка-врапер end */-->
+            </div>
+            <!--/* контейнер end */-->
+        </div>
+        <div class="swiper-pagination"></div>
+    </section> 
+
+    <section class="download"> 
         <div class="container">
-            <swiper-container>
-                <swiper-slide>Slide 1</swiper-slide>
-                <swiper-slide>Slide 2</swiper-slide>
-                <swiper-slide>Slide 3</swiper-slide>
-                <swiper-slide>Slide ...</swiper-slide>
-              </swiper-container>
+            <div class="download_wrapper">
+              <div class="download_title"> <p> Are You Ready to Start? Download Now For Free! </p> </div>  
+                <span> Fusce dapibus, tellus ac cursus commodo </span>
+                <button class="button"> download here </button>
+            </div>
         </div>
     </section>
- 
-    
+
+    <footer class="footer"> 
+            <section class="footer_content">
+                <div class="container">
+                <div class="footer_item-wrapper"> 
+                <div class="footer_item">
+                    <h3 class="footer_title"> Location</h3>
+                    <span class="footer_title-span"> 3481 Melrose Place Beverly Hills, CA 90210</span>
+                </div>
+                <div class="footer_item">
+                    <h3 class="footer_title" id="footer_title-socials"> Share with Love </h3>
+                    <nav class="socials"> 
+                        <ul class="socials-list"> 
+                        <li class="socials-item"> <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> </li>
+                        <li class="socials-item"> <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a> </li>
+                        <li class="socials-item"> <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a> </li>
+                        </ul>
+                     </nav>
+                </div>
+                <div class="footer_item">
+                   <h3 class="footer_title"> About ActiveBox</h3>
+                   <div class="footer_about-text"> <p> Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+                    Donec ullamcorper nulla non metus auctor fringilla.</p>  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </section>
+            <section class="footer_subtitle">
+                <div class="container">
+                    <div class="footer_subtitle-item"> 
+                    <p>Copyright © 2015 ActiveBox. All Rights Reserved
+                        Made with <span class="span_white"> by Kamal Chaneman</span></p>
+                    </div>
+                </div>
+            </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./js/app.js"></script>
 </body>
 </html>
+
+
+

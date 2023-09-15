@@ -6,23 +6,86 @@
 @import '../scss/feature.scss';
 @import '../scss/work.scss';
 @import '../scss/team.scss';
+@import '../scss/swiper.scss';
+@import '../scss/download.scss';
+@import '../scss/footer.scss';
 @import '../scss/media.scss';
 
-
+body.lock{
+    overflow: hidden;
+}
 .container {
     max-width: 1170px;
-    margin: auto;
+    margin:0 auto;
     padding: 0 15px;
- }
-.button {
+    @media(max-width:850px){
+            padding: 0 70px;
+    }
+    @media (max-width:425px){
+            padding: 0 20px;
+        }
+    }
+button {
     @include button;
+    @media (max-width:1025px){
+            width: 314px;
+    }
+    @media (max-width: 320px) {
+        width: 280px;
+        height: 60px;
+    }
 }
-.button:hover {
+button:hover {
     background-color:$red_nav-active_button-hover;
 }
-.button:active {
+button:active {
     @include button;
     box-shadow: 0px 0px 10px $red_btn-normal; 
 }
-
-
+.socials-item {
+    width: 39px;
+    height: 39px;
+    border:1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color:$light-gray;
+    cursor: pointer;
+    @media (max-width: 1025px){
+            width: 32px;
+            height: 32px;
+    }
+}
+.socials i {
+    font-size: 20px;
+    color: $light-gray;
+}
+.socials-item:hover {
+    background-color: $light-gray;
+}
+.socials-item:hover i{
+    transition: 0.4s;
+    color:rgb(7, 7, 159);
+}
+.socials-item:first-child:hover i{
+    color:rgb(109, 157, 252);
+}
+.socials-item:last-child:hover i{
+    color:rgb(215, 36, 144);
+}
+.socials-item:active i{
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+.socials-item:active{
+    border: transparent;  
+    background-color: transparent;
+    box-shadow: inset 0px 0px 10px rgb(7, 7, 159); 
+    transition: all 0.4s;
+}
+.socials-item:first-child:active {
+    box-shadow: inset 0px 0px 10px rgb(109, 157, 252); 
+}
+.socials-item:last-child:active {
+    box-shadow: inset 0px 0px 10px rgb(215, 36, 144); 
+}

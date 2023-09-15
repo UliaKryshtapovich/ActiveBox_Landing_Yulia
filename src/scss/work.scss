@@ -1,20 +1,55 @@
 .work {
-   padding:133px 0px 114px;
-    &_wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 0px;
-    } 
-    &_img {
-        width: 366px;
+     display: grid;
+        grid-template-columns: repeat(4,1fr);
+    &_item {
+        width: 100%;
         height: 340px;
+        border: solid 2px $white;
+        position: relative;
     }
     img {
+        position: absolute;
         display: block;
         height: 100%;
         width: 100%;
-        object-fit: contain;
+        overflow: hidden;
+        object-fit: cover;
     }
+    &_img-hover {
+        padding:125px 0 128px;
+        h3 {
+            font-size: $_24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom:40px;
+        }
+        span {
+            font-size: $_18px;
+            font-weight: 400;
+        }
+    }
+    &_item &_img-hover {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(255, 67, 67, 0.8);
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-family: Raleway;
+        cursor: pointer;
+    }
+    &_img-hover:hover {
+        opacity: 1;
+        transition: all 0.3s;
+    }
+    &_img-hover:active {
+        background-color:$work_active;
+        transition: all 0.3s;
+    }
+
 }
+    
  
